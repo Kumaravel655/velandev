@@ -1,0 +1,28 @@
+@keyframes spin-clockwise {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-counterclockwise {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .animate-spin-clockwise {
+    animation: spin-clockwise 8s linear infinite;
+  }
+  
+  .animate-spin-counterclockwise {
+    animation: spin-counterclockwise 8s linear infinite;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
